@@ -120,7 +120,7 @@ def main():
         car = get_car_details(car_link)
         print(asdict(car))
         print("----")
-        with open("avito-cars.csv", "a", encoding="utf-8") as file:
+        with open("avito_cars.csv", "a", encoding="utf-8") as file:
             # Write car data to CSV file
             file.write('\t'.join(asdict(car).values()) + '\n')
 
